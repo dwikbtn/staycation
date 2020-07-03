@@ -7,6 +7,7 @@ export default function Categories({ data }) {
       <section className="container" key={`category-${index1}`}>
         <h4 className="mb-3 font-weight-medium">{category.name}</h4>
         <div className="container-grids">
+          {/* jika data di json kosong */}
           {category.items.length === 0 ? (
             <div className="row">
               <div className="col-auto align-items-center">
@@ -14,6 +15,7 @@ export default function Categories({ data }) {
               </div>
             </div>
           ) : (
+            // jika data ada
             category.items.map((item, index2) => {
               return (
                 <div
