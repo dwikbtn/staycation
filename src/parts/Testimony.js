@@ -17,7 +17,7 @@ export default function Testimony({ data }) {
               <img
                 src={data.imageUrl}
                 alt="Testimonial"
-                className="position-absolute"
+                className="position-absolute testimony-image"
                 style={{ zIndex: 1 }}
               />
               <img

@@ -8,7 +8,7 @@ export default function Categories({ data }) {
       <section className="container" key={`category-${index1}`}>
         <Fade bottom>
           <h4 className="mb-3 font-weight-medium">{category.name}</h4>
-          <div className="container-grids">
+          <div className="container-grid">
             {/* jika data di json kosong */}
             {category.items.length === 0 ? (
               <div className="row">
