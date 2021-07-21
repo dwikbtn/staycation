@@ -80,6 +80,7 @@ export default class BookingForm extends Component {
 
     return (
       <div className="card bordered" style={{ padding: "60px 80px" }}>
+        {console.log(startBooking)}
         <h4 className="mb-3">Start Booking</h4>
         <h5 className="h2 text-teal mb-4">
           ${itemDetails.price}{" "}
@@ -96,10 +97,8 @@ export default class BookingForm extends Component {
           name="duration"
           value={data.duration}
         />
-
         <label htmlFor="date">Pick a date</label>
         <InputDate onChange={this.updateData} name="date" value={data.date} />
-
         <h6
           className="text-gray-500 font-weight-light"
           style={{ marginBottom: 40 }}
@@ -113,7 +112,6 @@ export default class BookingForm extends Component {
             {data.duration} {itemDetails.unit}
           </span>
         </h6>
-
         <Button
           className="btn"
           hasShadow
