@@ -23,13 +23,18 @@ export default class LandingPage extends Component {
         {/* ambil semua props di header menggunakan spread operator ... */}
         <Header {...this.props}></Header>
         {/* jangan lupa pass refMostPicked untuk auto scroll */}
+
         <Hero refMostPicked={this.refMostPicked} data={landingPage.hero} />
         <MostPicked
           refMostPicked={this.refMostPicked}
           data={landingPage.mostPicked}
         />
-        <Categories data={landingPage.categories} />
-        <Testimony data={landingPage.testimonial} />
+        <div id="browse-by">
+          <Categories data={landingPage.categories} />
+        </div>
+        <div id="#stories">
+          <Testimony data={landingPage.testimonial} />
+        </div>
         <Footer />
       </>
     );
